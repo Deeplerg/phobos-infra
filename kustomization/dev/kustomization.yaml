@@ -11,7 +11,7 @@ nameSuffix: -dev
 images:
 - name: phobos-image-name
   newName: 10.96.55.55:5000/phobos
-  newTag: dev-ebc1950b
+  newTag: dev-25071273
 
 configMapGenerator:
 - behavior: create
