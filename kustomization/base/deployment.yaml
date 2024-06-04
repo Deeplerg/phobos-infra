@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phobos
+spec:
+  selector:
+    matchLabels:
+      app: phobos
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: phobos
+    spec:
+      nodeSelector:
+        edge: "true"
+      containers:
+      - name: phobos
+        image: phobos-image-name # USE KUSTOMIZATION
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            cpu: 0m # do not limit
+            memory: 192Mi
+          requests:
+            cpu: 0m # schedule first, think later!
+            memory: 64Mi
+      imagePullSecrets:
+      - name: docker-registry-cred-phobos-prod
