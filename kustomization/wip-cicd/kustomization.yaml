@@ -10,8 +10,8 @@ nameSuffix: -wip-cicd
 
 images:
 - name: phobos-image-name
-  newName: phobos-image-name # still need to change this with "kustomize edit set image"
-  newTag: latest # this too
+  newName: 10.96.55.55:5000/phobos
+  newTag: wip-cicd-9261828f
 
 configMapGenerator:
 - behavior: create
