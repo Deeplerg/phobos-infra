@@ -11,7 +11,7 @@ nameSuffix: -wip-cicd
 images:
 - name: phobos-image-name
   newName: 10.96.55.55:5000/phobos
-  newTag: wip-cicd-9261828f
+  newTag: wip-cicd-a8e0c928
 
 configMapGenerator:
 - behavior: create
