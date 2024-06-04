@@ -10,8 +10,8 @@ nameSuffix: -dev
 
 images:
 - name: phobos-image-name
-  newName: phobos-image-name # still need to change this with "kustomize edit set image"
-  newTag: latest # this too
+  newName: 10.96.55.55:5000/phobos
+  newTag: dev-ebc1950b
 
 configMapGenerator:
 - behavior: create
